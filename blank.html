@@ -1,6 +1,6 @@
 <html>
  <head>
-  <title>Blank New Tab</title>
+  <title>DashTab</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
   <style>
     .container {
@@ -13,6 +13,9 @@
       text-align: center;
       font-weight: bold;
     }
+    .inline {
+      display:inline-block;
+    }
   </style>
  </head>
  <body>
@@ -20,13 +23,7 @@
   <div id="clock"></div>
   <div class="ui pointing menu">
     <a class="active item">
-      Home
-    </a>
-    <a class="item">
-      Messages
-    </a>
-    <a class="item">
-      Friends
+      Bookmarks
     </a>
     <div class="right menu">
       <div class="item">
@@ -39,7 +36,7 @@
   </div>
 
   <button class="fluid ui button"  id="addBookmark">Add bookmark</button>
-  <div class="ui relaxed divided list" id="bmList">
+  <div class="ui relaxed list" id="bmList">
   </div>
 </div>
  </body>
