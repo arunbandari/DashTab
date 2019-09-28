@@ -12,6 +12,7 @@
       font-size: 80px;
       text-align: center;
       font-weight: bold;
+      color: steelblue;
     }
     .inline {
       display:inline-block;
@@ -48,19 +49,20 @@
 
 <!--  modals -->
 <div class="ui mini modal" id="xyz">
-  <div class="header">Add new bookmark</div>
+  <div class="header">Bookmark form</div>
   <div class="content">
     <form class="ui form">
       <div class="field">
-        <input type="text" name="title" placeholder="Name">
+        <input type="text" name="title" autocomplete="off" spellcheck="false" placeholder="Name">
       </div>
       <div class="field">
-        <input type="text" name="url" placeholder="URL">
+        <input type="text" name="url" autocomplete="off" spellcheck="false" placeholder="URL">
       </div>
+      <input type="hidden" name="id">
     </form>
 </div>
 <div class="actions">
   <div class="ui cancel button">Cancel</div>
-  <div class="ui approve primary button">Add</div>
+  <div class="ui approve primary button">SAVE</div>
 </div>
 </div>
